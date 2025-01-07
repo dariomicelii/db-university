@@ -89,6 +89,6 @@ WHERE `id` = '58';
 
 ```sql
 DELETE FROM `university`.`students`
-WHERE `name` LIKE 'Dario' AND `surname` LIKE 'Miceli';
+WHERE `fiscal_code` = 'MCLDRA01D17G702M';
 
 ```
