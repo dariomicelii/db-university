@@ -30,7 +30,7 @@ WHERE YEAR(CURDATE()) - YEAR(`date_of_birth`) > 30;
 ```sql
 SELECT COUNT(*)
 FROM university.courses
-WHERE `period` = 'I semestre' AND `year` = 1;
+WHERE `period` LIKE 'I semestre' AND `year` LIKE 1;
 
 ```
 
