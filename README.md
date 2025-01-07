@@ -81,7 +81,7 @@ INSERT INTO `university`.`students` (`degree_id`, `name`, `surname`, `date_of_bi
 ```sql
 UPDATE `university`.`teachers`
 SET `office_number` = 126
-WHERE `name` = 'Pietro' AND `surname` = 'Rizzo';
+WHERE `id` = '58';
 
 ```
 
