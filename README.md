@@ -48,14 +48,14 @@ WHERE `date` = '2020-06-20' AND `hour` > '14:00:00';
 ```sql
 SELECT COUNT(`level`)
 FROM university.degrees
-WHERE `level` LIKE 'magistrale';
+WHERE `level` = 'magistrale';
 
 ```
 
 7. Da quanti dipartimenti è composta l'università? (12)
 
 ```sql
-SELECT COUNT(*)
+SELECT COUNT(`id`)
 FROM university.departments;
 
 ```
@@ -63,7 +63,7 @@ FROM university.departments;
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
 ```sql
-SELECT COUNT(*)
+SELECT COUNT(`id`)
 FROM university.teachers
 WHERE `phone` IS NULL;
 
@@ -81,7 +81,7 @@ INSERT INTO `university`.`students` (`degree_id`, `name`, `surname`, `date_of_bi
 ```sql
 UPDATE `university`.`teachers`
 SET `office_number` = 126
-WHERE `id` = '58';
+WHERE `id` = 58;
 
 ```
 
